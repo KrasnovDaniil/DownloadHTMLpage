@@ -1,0 +1,18 @@
+2020-06-30 23:13:10 INFO  main:27 - 
+Начало работы программы
+2020-06-30 23:13:10 INFO  main:34 - Введена ссылка https://www.simbirsoft.com/
+2020-06-30 23:13:10 INFO  main:41 - Веб-страница скачалась
+2020-06-30 23:13:10 INFO  DownlaodPage:22 - Метод run() класса запущен DownloadHTMLPage.DownlaodPage
+2020-06-30 23:13:10 INFO  DownlaodPage:30 - Ссылка https://www.simbirsoft.com/ получена 
+2020-06-30 23:13:10 INFO  DownlaodPage:32 - Соединение установлено
+2020-06-30 23:13:12 INFO  DownlaodPage:43 - Выполнена загрузка страницы в файл
+2020-06-30 23:13:12 INFO  DownlaodPage:53 - Потоки ввода и вывода закрыты
+2020-06-30 23:13:12 INFO  main:46 - Сформирован Jsoup document с DOC деревом
+2020-06-30 23:13:12 INFO  main:48 - Взят и выделен html-код
+2020-06-30 23:13:12 INFO  main:50 - Выполнен парсинг текста на веб-странице
+2020-06-30 23:13:12 INFO  CounterUniqueWords:27 - Получены данные в конструктор класса {0}CountUniqueWords.CounterUniqueWords
+2020-06-30 23:13:12 INFO  main:57 - Запуск метода подсчёта слов
+2020-06-30 23:13:12 INFO  main:59 - Подсчёт слов окончен
+2020-06-30 23:13:12 INFO  main:61 - Конец работы программы
+2020-06-30 23:13:12 INFO  CounterUniqueWords:41 - Начало подсчёта уник. слов
+2020-06-30 23:13:12 INFO  CounterUniqueWords:64 - Вывод на экран статистики

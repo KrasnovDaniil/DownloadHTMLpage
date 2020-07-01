@@ -2,63 +2,51 @@ import CountUniqueWords.CounterUniqueWords;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// Тут осталось дописать нормальные тесты и стереть, что не нужно
 public class TestFunctionality {
     private String pageText = "привет что чт прив чт прив яблоко";
     private CounterUniqueWords cuw;
 
     @Before
-    public void setUp(){
+    public void setUp() {
+
         cuw = new CounterUniqueWords(pageText);
         cuw.perform();
 
     }
 
     @Test
-    public void testDislpayData(){
-        cuw.getResult();
+    public void testDislpayData() throws IOException {
+        main.main(new String[]{"https://codeforces.com/"});
+//        cuw.getResult();
     }
 
     @Test
-    public void justTest(){
-        cuw.printData();
+    public void justTest() {
+        String text = "asd";
+        String reg = "\\<.*?>";
+        //Pattern pattern = Pattern.compile(reg);
+        String newtext = text.replaceAll(reg,"");
+        System.out.println(newtext);
     }
 
     @Test
-    public void testRegExp(){
+    public void testRegExp() {
         String s = "приветИгорь, я Ива2н! Ubah";
         String s1 = "hel111o или, чт1о НаДо! теБе hi";
         String petya = "петя";
         Pattern pattern = Pattern.compile("([а-яёА-ЯЁ]*|[a-zA-Z]*)");
         Matcher matcher = pattern.matcher("helloфвыd");
-        if(matcher.matches())
-            System.out.print(matcher.group()+"__");
+        if (matcher.matches())
+            System.out.print(matcher.group() + "__");
     }
 
-    // {' |,|.|!|?|\"|;|:|[|]|(|)|\\n|\\r|\\t'}
     @Test
-    public void splitTest(){
-        B a = new B();
+    public void splitTest() {
     }
 
-}
-
-class A{
-    {
-        System.out.println("A IIB");
-    }
-    A(){
-        System.out.println("A ctor");
-    }
-}
-
-class B extends A{
-    {
-        System.out.println("B IIB");
-    }
-    B(){
-        System.out.println("B ctor");
-    }
 }
